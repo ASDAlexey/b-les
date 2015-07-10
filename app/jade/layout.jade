@@ -1,0 +1,31 @@
+doctype html
+html
+    head
+        include ./includes/head.jade
+        include ./includes/mixins.jade
+    body
+        .wrapper.dNtoLoad
+            +header()
+            main.main
+                .container
+                    block content
+        footer.footer
+            .inner-footer
+                ul.list-footer
+                    li
+                        a(href="tel:+74951500032") +7 495 150 00 32
+                    li
+                        a(href="") Скачать каталог
+                    li
+                        a(href="") Подписаться
+                    li
+                        a(href="") Заказать замер
+        #container-preloader.container-preloader
+            ul.bokeh
+                li
+                li
+                li
+                li
+        //button.up.fa.fa-angle-double-up
+        script(src="http://api-maps.yandex.ru/2.1/?load=package.map&lang=ru-RU" defer)
+        script(src="./scripts/bundle.js" defer)

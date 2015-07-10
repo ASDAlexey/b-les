@@ -1,0 +1,103 @@
+.list-news
+  margin-top:31px
+  display:flex
+  flex-wrap:wrap;
+  justify-content:left;
+  > li
+    position:relative
+    z-index:0
+    padding-bottom:15px
+    margin-top:48px
+    width:calc(33.33333333% - 28px)
+    margin-left:41px
+    &:nth-child(-n+3)
+      margin-top:0
+    &:nth-child(3n-2)
+      margin-left:0
+    .header-list
+      margin-bottom:24px
+      height:186px
+      width:100%
+      font-size:0
+      .list-info
+        height:100%
+        width:118px
+        dibt()
+        .date
+          background-color:#3a7152
+          {size}
+          > *
+            br(24px)
+            color:#fff
+            width:55px
+        .link
+          background-color:#cbc2a6
+          padding-top:9px
+          {size}
+          text-decoration:none
+          > *
+            text-transform:uppercase
+            br(17px)
+            color:#fff
+      .wrapper-img
+        overflow hidden
+        dibt()
+        height:100%
+        width:calc(100% - 118px)
+        position:relative
+        z-index:0
+        .img
+          text-decoration:none
+          position:absolute
+          z-index:0
+          width:100%
+          height:100%
+          left:0
+          top:0
+          background-repeat:no-repeat
+          background-position:center center
+          background-size cover
+          tn(.5s)
+          &:hover
+            transform:scale(1.1)
+    .content-list
+      h2
+        color:#000
+        br(17px, 1.35)
+        text-transform:uppercase
+        margin-bottom:8px
+        a
+          text-decoration:none
+      p
+        color:#000
+        br(13px, 1.35)
+        padding-bottom:19px
+    .footer-list
+      border-top:1px solid #dcdcdc
+      position:absolute
+      z-index:1
+      left:0
+      bottom:0
+      width:100%
+      padding-top:11px
+      after()
+      .views
+        display:block
+        float:left
+        margin-left:27px
+        position:relative
+        z-index:0
+        color:#aea27c
+        br(14px)
+        &:after
+          content:''
+          position:absolute
+          z-index:1
+          sprite($views)
+          left:-27px
+          top:0
+      .more
+        float:right
+        display:block
+        color:#aea27c
+        br()

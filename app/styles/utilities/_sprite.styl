@@ -1,0 +1,158 @@
+/*
+Stylus variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon_home_width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon_home = x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet = width height image $spritesheet_sprites;
+*/
+$adv_1_name = 'adv-1';
+$adv_1_x = 0px;
+$adv_1_y = 80px;
+$adv_1_offset_x = 0px;
+$adv_1_offset_y = -80px;
+$adv_1_width = 86px;
+$adv_1_height = 54px;
+$adv_1_total_width = 201px;
+$adv_1_total_height = 171px;
+$adv_1_image = '../../images/sprite.png';
+$adv_1 = 0px 80px 0px -80px 86px 54px 201px 171px '../../images/sprite.png' 'adv-1';
+$adv_2_name = 'adv-2';
+$adv_2_x = 71px;
+$adv_2_y = 0px;
+$adv_2_offset_x = -71px;
+$adv_2_offset_y = 0px;
+$adv_2_width = 80px;
+$adv_2_height = 62px;
+$adv_2_total_width = 201px;
+$adv_2_total_height = 171px;
+$adv_2_image = '../../images/sprite.png';
+$adv_2 = 71px 0px -71px 0px 80px 62px 201px 171px '../../images/sprite.png' 'adv-2';
+$adv_3_name = 'adv-3';
+$adv_3_x = 0px;
+$adv_3_y = 0px;
+$adv_3_offset_x = 0px;
+$adv_3_offset_y = 0px;
+$adv_3_width = 67px;
+$adv_3_height = 76px;
+$adv_3_total_width = 201px;
+$adv_3_total_height = 171px;
+$adv_3_image = '../../images/sprite.png';
+$adv_3 = 0px 0px 0px 0px 67px 76px 201px 171px '../../images/sprite.png' 'adv-3';
+$f_download_name = 'f-download';
+$f_download_x = 155px;
+$f_download_y = 50px;
+$f_download_offset_x = -155px;
+$f_download_offset_y = -50px;
+$f_download_width = 42px;
+$f_download_height = 50px;
+$f_download_total_width = 201px;
+$f_download_total_height = 171px;
+$f_download_image = '../../images/sprite.png';
+$f_download = 155px 50px -155px -50px 42px 50px 201px 171px '../../images/sprite.png' 'f-download';
+$f_mail_name = 'f-mail';
+$f_mail_x = 0px;
+$f_mail_y = 138px;
+$f_mail_offset_x = 0px;
+$f_mail_offset_y = -138px;
+$f_mail_width = 51px;
+$f_mail_height = 33px;
+$f_mail_total_width = 201px;
+$f_mail_total_height = 171px;
+$f_mail_image = '../../images/sprite.png';
+$f_mail = 0px 138px 0px -138px 51px 33px 201px 171px '../../images/sprite.png' 'f-mail';
+$f_measurement_name = 'f-measurement';
+$f_measurement_x = 155px;
+$f_measurement_y = 0px;
+$f_measurement_offset_x = -155px;
+$f_measurement_offset_y = 0px;
+$f_measurement_width = 46px;
+$f_measurement_height = 46px;
+$f_measurement_total_width = 201px;
+$f_measurement_total_height = 171px;
+$f_measurement_image = '../../images/sprite.png';
+$f_measurement = 155px 0px -155px 0px 46px 46px 201px 171px '../../images/sprite.png' 'f-measurement';
+$f_phone_name = 'f-phone';
+$f_phone_x = 90px;
+$f_phone_y = 80px;
+$f_phone_offset_x = -90px;
+$f_phone_offset_y = -80px;
+$f_phone_width = 51px;
+$f_phone_height = 51px;
+$f_phone_total_width = 201px;
+$f_phone_total_height = 171px;
+$f_phone_image = '../../images/sprite.png';
+$f_phone = 90px 80px -90px -80px 51px 51px 201px 171px '../../images/sprite.png' 'f-phone';
+$views_name = 'views';
+$views_x = 155px;
+$views_y = 104px;
+$views_offset_x = -155px;
+$views_offset_y = -104px;
+$views_width = 21px;
+$views_height = 13px;
+$views_total_width = 201px;
+$views_total_height = 171px;
+$views_image = '../../images/sprite.png';
+$views = 155px 104px -155px -104px 21px 13px 201px 171px '../../images/sprite.png' 'views';
+$spritesheet_width = 201px;
+$spritesheet_height = 171px;
+$spritesheet_image = '../../images/sprite.png';
+$spritesheet_sprites = $adv_1 $adv_2 $adv_3 $f_download $f_mail $f_measurement $f_phone $views;
+$spritesheet = 201px 171px '../../images/sprite.png' $spritesheet_sprites;
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  spriteWidth($icon_home)
+}
+
+.icon-email {
+  sprite($icon_email)
+}
+*/
+spriteWidth($sprite) {
+  width: $sprite[4];
+}
+
+spriteHeight($sprite) {
+  height: $sprite[5];
+}
+
+spritePosition($sprite) {
+  background-position: $sprite[2] $sprite[3];
+}
+
+spriteImage($sprite) {
+  background-image: url($sprite[8]);
+}
+
+sprite($sprite) {
+  spriteImage($sprite)
+  spritePosition($sprite)
+  spriteWidth($sprite)
+  spriteHeight($sprite)
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of Stylus
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+sprites($spritesheet_sprites);
+*/
+sprites($sprites) {
+  for $sprite in $sprites {
+    $sprite_name = $sprite[9];
+    .{$sprite_name} {
+      sprite($sprite);
+    }
+  }
+}

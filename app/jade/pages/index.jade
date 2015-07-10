@@ -1,0 +1,26 @@
+//- index.jade
+extends ../layout.jade
+block content
+    section.bg-slider-block
+        ul.switchers
+            li
+                a.fa.pe-7s-angle-left-circle.prev.arrow
+            li
+                a.fa.pe-7s-angle-right-circle.next.arrow
+        ul.slider
+            each slide in bg_slider
+                li(style="background-image:url('#{slide.src}')")
+        ul.trim-container
+        ul.thumb-menu
+            -var slides=[1,2,3,4,5,6,4,5]
+            -var textSlides=['Многостворчатые конструкции','накладки для входных дверей','Перегородки','Плинтусы','Раздвижные двери','Распашные двери','Cтеновые панели','Фрамуги'];
+            each val,index in slides
+                li(style="width:#{100/slides.length}%")
+                    if(index==5)
+                        a.active(href="" style="background-image:url('./images/bg-slider/#{val}.jpg')")
+                            h2.title-slide
+                                span #{textSlides[index]}
+                    else
+                        a(href="" style="background-image:url('./images/bg-slider/#{val}.jpg')")
+                            h2.title-slide
+                                span #{textSlides[index]}

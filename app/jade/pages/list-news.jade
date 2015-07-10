@@ -1,0 +1,37 @@
+//- index.jade
+extends ../layout.jade
+block content
+    //Основной контейнер для вставки компонента
+    section.content-block
+        h1 Новости
+        ul.list-news
+            -var i=0
+            while i<6
+                li
+                    header.header-list
+                        .list-info
+                            .date
+                                time 12 янв
+                            a(href="./matherial.html").link
+                                span Подробнее
+                        .wrapper-img
+                            a.img(href="./matherial.html" style="background-image:url('./images/list-news/#{i%3+1}.jpg')")
+                    .content-list
+                        h2
+                            a(href="./matherial.html")
+                                +lipsum(3*i+10, "words")
+                        p
+                            +lipsum(10*i+10, "words")
+                    footer.footer-list
+                        span.views 127
+                        a.more(href="./matherial.html") Читать полностью
+                -i++
+        ul.pagination
+            li
+                span 1
+            li
+                a(href="/index.php?option=com_k2&view=itemlist&layout=category&task=category&id=2&Itemid=115&limitstart=4") 2
+            li
+                a(href="/index.php?option=com_k2&view=itemlist&layout=category&task=category&id=2&Itemid=115&limitstart=4") 3
+            li
+                a(href="/index.php?option=com_k2&view=itemlist&layout=category&task=category&id=2&Itemid=115&limitstart=4") 4

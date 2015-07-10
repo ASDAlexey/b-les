@@ -1,0 +1,15 @@
+//- index.jade
+extends ../layout.jade
+block content
+    //Основной контейнер для вставки компонента
+    section.map-block#map(data-info='#{JSON.stringify(map)}')
+    //.maps-block - добавить только на страницах с картой
+    section.content-block.maps-block
+
+        ul.list-buy
+            each el,index in map.markers
+                li
+                    h2 #{el.title}
+                    p <strong>Адрес:</strong> #{el.address}
+                    p <strong>Тел:</strong> #{el.phone}
+                    p <strong>E-mail:</strong>  #{el.email}

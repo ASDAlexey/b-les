@@ -1,0 +1,79 @@
+html, body, .wrapper
+  height:100%
+body > .wrapper
+  height:auto
+  min-height:100%
+  background-color:#f5f2e8
+  padding-bottom:83px
+body
+  background-color:#f5f2e8
+.footer
+  margin-top:-83px
+.container
+  position:relative
+  z-index:0
+  width:1540px
+  padding:0 20px
+  margin:0 auto
+  after()
+  +below(1550px)
+    width:1000px
+.main
+  padding-bottom:44px
+.default-title
+  margin-top:70px
+  margin-bottom:7px
+  text-align:center
+  ptsr(36px)
+  text-transform:uppercase
+  color:#303030
+  &.private
+    margin:70px auto 7px
+    max-width:595px
+.wrapper-default-sub-title
+  text-align:center
+.default-sub-title
+  text-decoration:none
+  margin-top:18px
+  text-align:center
+  font:18px Georgia, sans-serif
+  font-style italic
+  color:#606060
+.fixed-cart
+  position:fixed
+  z-index:10
+  right 24px
+  top:50%
+  width:106px
+  height:106px
+  margin-top:-53px
+  background-color:#a9c251
+  tn(.4s)
+  &:before
+    content:''
+    position:absolute
+    z-index:1
+    aa(1)
+    sprite($fixed_cart)
+  .count
+    aa(2)
+    border-radius:50%
+    width:28px
+    height:28px
+    background-color:#000
+    color:#fff
+    text-align:center
+    padding-top:6px
+    display:block
+    margin-top:26px
+    margin-left:18px
+    lr(17px)
+  &:hover
+    background-color:#84c232
+    border-radius:50%
+@media screen and (max-width:1100px)
+  html, body
+    overflow-x:hidden
+    width:100%
+  .hide
+    display:none

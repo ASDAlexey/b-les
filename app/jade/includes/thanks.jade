@@ -1,0 +1,9 @@
+div.w(ng-if="formIsValide==true")
+    div(class="wrapper-thank" ng-class="{'load':load==true}")
+        div.close(ng-click="hideThank()" rotate)
+            span
+        div.wrapper-thank-content
+            .wrapper-logo
+                img(src="./images/logo.png")
+            span Спасибо за заявку!
+            span В ближайшее время, наш сотрудник, обязательно с Вами свяжется.

@@ -1,0 +1,130 @@
+.bg-slider-block
+  position:fixed
+  z-index:9
+  left:0
+  top:0
+  width:100%
+  height:calc(100% - 78px)
+  .trim-container
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index:0;
+    top:0
+    left:0
+    > li
+      tn(.8s)
+      width:100%
+      height:100%
+      position:absolute
+      z-index:-1
+      top:0
+      left:0
+      background-repeat:no-repeat
+      background-size cover
+      background-position:center top
+      &.first.active
+        left:100%
+        tn(0s)
+      &.last.active
+        left:-100%
+        tn(0s)
+  .thumb-menu
+    width:100%
+    position:absolute
+    z-index:2
+    left:0
+    bottom:0
+    display:flex
+    > li
+      border-right:2px solid transparent
+      width:12.5%
+      &:last-child
+        border:none
+      > a
+        width:100%
+        display:block
+        height:233px
+        background-repeat:no-repeat
+        background-position:center center
+        background-size cover
+        position:relative
+        z-index:0
+        text-align:center
+        &.active, &:hover
+          .title-slide
+            background-color:#3a7152
+            &:after
+              opacity:1
+              border-top:10px solid #3a7152;
+              bottom:-26px
+            span
+              color:#e3ddca
+        .title-slide
+          tn(.7s)
+          position:absolute
+          z-index:1
+          left:0
+          top:0
+          width:100%
+          height:62px
+          background-color:rgba(255, 255, 255, .79)
+          display:flex
+          justify-content:center
+          flex-direction:column
+          &:after
+            transition-delay .7s
+            opacity:0
+            tn(.7s)
+            content:''
+            position:absolute
+            z-index:1
+            left:50%
+            tt(-50%, 0)
+            bottom:-18px
+            border:18px solid transparent;
+            border-top:10px solid rgba(255, 255, 255, .79);
+          span
+            padding:2px 12px 0
+            display:block
+            br(18px)
+            text-transform:uppercase
+            color:#39322f
+            +below(1250px)
+              font-size:16px
+            +below(1120px)
+              font-size:14px
+  .switchers
+    > li
+      position:absolute
+      z-index:1
+      top:50%
+      margin-top:-86px
+      &:first-child
+        left:46px
+      &:nth-child(2)
+        right:46px
+      > a
+        cursor:pointer
+        text-decoration:none
+        color:#fff
+        font-size:90px
+        font-weight 700
+        tn(.5s)
+        &:hover
+          color:#3a7152
+  > .slider
+    tn(.8s)
+    width:100%
+    height:100%
+    font-size:0
+    white-space nowrap
+    &.actived
+      transition:0s
+    > li
+      dibt()
+      width:100%
+      height:100%
+      background-repeat:no-repeat
+      background-size cover
+      background-position:center top

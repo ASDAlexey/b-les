@@ -1,0 +1,72 @@
+.footer
+  position:relative
+  z-index:11
+  overflow:hidden
+  width:100%
+  border-style:solid;
+  border-width:5px 0 0;
+  border-image:url(../images/arrow.png) 5 0 0 fill repeat;
+  .inner-footer
+    height:78px
+    background-color:#e0cfa3
+    .list-footer
+      margin:0 auto
+      width:1280px
+      height:78px
+      text-align:center
+      font-size:0
+      display:flex
+      align-items center
+      justify-content space-between
+      +below(1320px)
+        padding-left:50px
+        width:945px
+      > li
+        padding-top:10px
+        dibt()
+        &:first-child
+          > a
+            &:after
+              sprite($f_phone)
+        &:nth-child(2)
+          > a
+            &:after
+              sprite($f_download)
+              margin-top:-5px
+        &:nth-child(3)
+          > a
+            &:after
+              sprite($f_mail)
+        &:nth-child(4)
+          > a
+            &:after
+              sprite($f_measurement)
+        > a
+          text-transform:uppercase
+          display:block
+          text-decoration:none
+          color:#3a7152
+          position:relative
+          z-index:0
+          br(24px)
+          &:after
+            content:''
+            position:absolute
+            z-index:1
+            left:-35px
+            top:50%
+            tt(-50%, -50%)
+            margin-top:-2px
+          &:hover
+            &:before
+              width:100%
+          &:before
+            tn(.7s)
+            left:0
+            bottom:-1px
+            content:''
+            position:absolute
+            z-index:1
+            width:0
+            height:1px
+            background-color:#3a7152

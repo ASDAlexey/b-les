@@ -1,0 +1,522 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'i' ]
+2 info using npm@2.7.4
+3 info using node@v0.12.2
+4 warn package.json webpack-angular@1.0.0 No README data
+5 verbose install where, deps [ 'C:\\projects\\b-les',
+5 verbose install   [ 'angular',
+5 verbose install     'angular-animate',
+5 verbose install     'angular-aria',
+5 verbose install     'angular-material',
+5 verbose install     'angular-messages',
+5 verbose install     'angular-ui-router',
+5 verbose install     'async-uglify-js-webpack-plugin',
+5 verbose install     'script-loader',
+5 verbose install     'angular-formly',
+5 verbose install     'api-check',
+5 verbose install     'awesome-typescript-loader',
+5 verbose install     'babel',
+5 verbose install     'babel-core',
+5 verbose install     'babel-loader',
+5 verbose install     'bower-webpack-plugin',
+5 verbose install     'coffee-loader',
+5 verbose install     'coffee-script',
+5 verbose install     'css-loader',
+5 verbose install     'file-loader',
+5 verbose install     'gulp',
+5 verbose install     'gulp-autoprefixer',
+5 verbose install     'gulp-coffee',
+5 verbose install     'gulp-connect',
+5 verbose install     'gulp-data',
+5 verbose install     'gulp-htmlmin',
+5 verbose install     'gulp-imagemin',
+5 verbose install     'gulp-jade',
+5 verbose install     'gulp-minify-html',
+5 verbose install     'gulp-pleeease',
+5 verbose install     'gulp-plumber',
+5 verbose install     'gulp-sass',
+5 verbose install     'gulp-sourcemaps',
+5 verbose install     'gulp-stylus',
+5 verbose install     'gulp-uglify',
+5 verbose install     'gulp-util',
+5 verbose install     'gulp.spritesmith',
+5 verbose install     'imagemin-pngquant',
+5 verbose install     'imports-loader',
+5 verbose install     'jade',
+5 verbose install     'jade-html-loader',
+5 verbose install     'jade-loader',
+5 verbose install     'jshint',
+5 verbose install     'raw-loader',
+5 verbose install     'source-map-loader',
+5 verbose install     'style-loader',
+5 verbose install     'stylus',
+5 verbose install     'stylus-loader',
+5 verbose install     'uglify-js',
+5 verbose install     'uglify-loader',
+5 verbose install     'url-loader',
+5 verbose install     'webpack',
+5 verbose install     'webpack-core',
+5 verbose install     'webpack-dev-server' ] ]
+6 verbose install where, peers [ 'C:\\projects\\b-les', [] ]
+7 info preinstall webpack-angular@1.0.0
+8 verbose already installed skipping babel@^4.7.4 C:\projects\b-les
+9 verbose already installed skipping babel-core@^4.7.4 C:\projects\b-les
+10 verbose already installed skipping babel-loader@^5.1.4 C:\projects\b-les
+11 verbose already installed skipping bower-webpack-plugin@^0.1.8 C:\projects\b-les
+12 verbose already installed skipping coffee-loader@^0.7.2 C:\projects\b-les
+13 verbose already installed skipping coffee-script@^1.9.2 C:\projects\b-les
+14 verbose already installed skipping css-loader@^0.10.1 C:\projects\b-les
+15 verbose already installed skipping file-loader@^0.8.1 C:\projects\b-les
+16 verbose already installed skipping gulp@^3.8.11 C:\projects\b-les
+17 verbose already installed skipping gulp-autoprefixer@^2.1.0 C:\projects\b-les
+18 verbose already installed skipping gulp-coffee@^2.3.1 C:\projects\b-les
+19 verbose already installed skipping gulp-connect@^2.2.0 C:\projects\b-les
+20 verbose already installed skipping gulp-data@^1.2.0 C:\projects\b-les
+21 verbose already installed skipping gulp-htmlmin@^1.1.3 C:\projects\b-les
+22 verbose already installed skipping gulp-imagemin@^2.2.1 C:\projects\b-les
+23 verbose already installed skipping gulp-jade@^1.0.0 C:\projects\b-les
+24 verbose already installed skipping gulp-minify-html@^1.0.1 C:\projects\b-les
+25 verbose already installed skipping gulp-pleeease@^1.2.0 C:\projects\b-les
+26 verbose already installed skipping gulp-plumber@^0.6.6 C:\projects\b-les
+27 verbose already installed skipping gulp-sass@^1.3.3 C:\projects\b-les
+28 verbose already installed skipping gulp-sourcemaps@^1.3.0 C:\projects\b-les
+29 verbose already installed skipping gulp-stylus@^2.0.1 C:\projects\b-les
+30 verbose already installed skipping gulp-uglify@^1.1.0 C:\projects\b-les
+31 verbose already installed skipping gulp-util@^3.0.4 C:\projects\b-les
+32 verbose already installed skipping gulp.spritesmith@^3.0.0 C:\projects\b-les
+33 verbose already installed skipping imagemin-pngquant@^4.0.0 C:\projects\b-les
+34 verbose already installed skipping imports-loader@^0.6.3 C:\projects\b-les
+35 verbose already installed skipping jade@^1.9.2 C:\projects\b-les
+36 verbose already installed skipping jade-html-loader@0.0.2 C:\projects\b-les
+37 verbose already installed skipping jade-loader@^0.7.1 C:\projects\b-les
+38 verbose already installed skipping jshint@^2.6.3 C:\projects\b-les
+39 verbose already installed skipping raw-loader@^0.5.1 C:\projects\b-les
+40 verbose already installed skipping source-map-loader@^0.1.3 C:\projects\b-les
+41 verbose already installed skipping style-loader@^0.10.2 C:\projects\b-les
+42 verbose already installed skipping stylus@^0.49.3 C:\projects\b-les
+43 verbose already installed skipping stylus-loader@^0.6.0 C:\projects\b-les
+44 verbose already installed skipping uglify-js@^2.4.20 C:\projects\b-les
+45 verbose already installed skipping uglify-loader@^1.2.0 C:\projects\b-les
+46 verbose already installed skipping url-loader@^0.5.5 C:\projects\b-les
+47 verbose already installed skipping webpack@^1.8.11 C:\projects\b-les
+48 verbose already installed skipping webpack-core@^0.5.0 C:\projects\b-les
+49 verbose already installed skipping webpack-dev-server@^1.7.0 C:\projects\b-les
+50 verbose already installed skipping angular@^1.3.14 C:\projects\b-les
+51 verbose already installed skipping angular-animate@^1.3.14 C:\projects\b-les
+52 verbose already installed skipping angular-aria@^1.3.14 C:\projects\b-les
+53 verbose already installed skipping angular-material@^0.8.3 C:\projects\b-les
+54 verbose already installed skipping angular-messages@^1.3.14 C:\projects\b-les
+55 verbose already installed skipping angular-ui-router@^0.2.13 C:\projects\b-les
+56 verbose already installed skipping async-uglify-js-webpack-plugin@0.0.1 C:\projects\b-les
+57 verbose already installed skipping script-loader@^0.6.1 C:\projects\b-les
+58 verbose already installed skipping angular-formly@^4.0.8 C:\projects\b-les
+59 verbose already installed skipping api-check@^6.0.10 C:\projects\b-les
+60 verbose already installed skipping awesome-typescript-loader@^0.6.0-rc.2 C:\projects\b-les
+61 silly install resolved []
+62 info build C:\projects\b-les
+63 verbose linkStuff [ false, false, false, 'C:\\projects' ]
+64 info linkStuff webpack-angular@1.0.0
+65 verbose linkBins webpack-angular@1.0.0
+66 verbose linkMans webpack-angular@1.0.0
+67 verbose rebuildBundles webpack-angular@1.0.0
+68 verbose rebuildBundles [ '.bin',
+68 verbose rebuildBundles   'angular',
+68 verbose rebuildBundles   'angular-animate',
+68 verbose rebuildBundles   'angular-aria',
+68 verbose rebuildBundles   'angular-cookies',
+68 verbose rebuildBundles   'angular-formly',
+68 verbose rebuildBundles   'angular-google-maps',
+68 verbose rebuildBundles   'angular-material',
+68 verbose rebuildBundles   'angular-messages',
+68 verbose rebuildBundles   'angular-resource',
+68 verbose rebuildBundles   'angular-ui-router',
+68 verbose rebuildBundles   'angular-validation-match',
+68 verbose rebuildBundles   'api-check',
+68 verbose rebuildBundles   'async-uglify-js-webpack-plugin',
+68 verbose rebuildBundles   'awesome-typescript-loader',
+68 verbose rebuildBundles   'babel',
+68 verbose rebuildBundles   'babel-core',
+68 verbose rebuildBundles   'babel-loader',
+68 verbose rebuildBundles   'bower-webpack-plugin',
+68 verbose rebuildBundles   'classie',
+68 verbose rebuildBundles   'coffee-loader',
+68 verbose rebuildBundles   'coffee-script',
+68 verbose rebuildBundles   'core-util-is',
+68 verbose rebuildBundles   'css-loader',
+68 verbose rebuildBundles   'estraverse',
+68 verbose rebuildBundles   'file-loader',
+68 verbose rebuildBundles   'gsap',
+68 verbose rebuildBundles   'gulp',
+68 verbose rebuildBundles   'gulp-autoprefixer',
+68 verbose rebuildBundles   'gulp-coffee',
+68 verbose rebuildBundles   'gulp-connect',
+68 verbose rebuildBundles   'gulp-data',
+68 verbose rebuildBundles   'gulp-htmlmin',
+68 verbose rebuildBundles   'gulp-imagemin',
+68 verbose rebuildBundles   'gulp-jade',
+68 verbose rebuildBundles   'gulp-minify-css',
+68 verbose rebuildBundles   'gulp-minify-html',
+68 verbose rebuildBundles   'gulp-pleeease',
+68 verbose rebuildBundles   'gulp-plumber',
+68 verbose rebuildBundles   'gulp-purifycss',
+68 verbose rebuildBundles   'gulp-sass',
+68 verbose rebuildBundles   'gulp-sourcemaps',
+68 verbose rebuildBundles   'gulp-stylus',
+68 verbose rebuildBundles   'gulp-uglify',
+68 verbose rebuildBundles   'gulp-util',
+68 verbose rebuildBundles   'gulp.spritesmith',
+68 verbose rebuildBundles   'imagemin-pngquant',
+68 verbose rebuildBundles   'imports-loader',
+68 verbose rebuildBundles   'inherits',
+68 verbose rebuildBundles   'is-property',
+68 verbose rebuildBundles   'isarray',
+68 verbose rebuildBundles   'jade',
+68 verbose rebuildBundles   'jade-html-loader',
+68 verbose rebuildBundles   'jade-loader',
+68 verbose rebuildBundles   'jquery',
+68 verbose rebuildBundles   'jshint',
+68 verbose rebuildBundles   'jshint-loader',
+68 verbose rebuildBundles   'jsx-loader',
+68 verbose rebuildBundles   'legacy-loader',
+68 verbose rebuildBundles   'lodash',
+68 verbose rebuildBundles   'modernizr',
+68 verbose rebuildBundles   'ngmin',
+68 verbose rebuildBundles   'ngmin-webpack-plugin',
+68 verbose rebuildBundles   'nib',
+68 verbose rebuildBundles   'perfect-scrollbar',
+68 verbose rebuildBundles   'raw-loader',
+68 verbose rebuildBundles   'rupture',
+68 verbose rebuildBundles   'scandir',
+68 verbose rebuildBundles   'script-loader',
+68 verbose rebuildBundles   'source-map-loader',
+68 verbose rebuildBundles   'style-loader',
+68 verbose rebuildBundles   'stylus',
+68 verbose rebuildBundles   'stylus-loader',
+68 verbose rebuildBundles   'uglify-js',
+68 verbose rebuildBundles   'uglify-loader',
+68 verbose rebuildBundles   'url-loader',
+68 verbose rebuildBundles   'webpack',
+68 verbose rebuildBundles   'webpack-core',
+68 verbose rebuildBundles   'webpack-dev-server' ]
+69 verbose rebuild bundle C:\projects\b-les\node_modules\angular-cookies
+70 info build C:\projects\b-les\node_modules\angular-cookies
+71 info preinstall angular-cookies@1.4.1
+72 verbose linkStuff [ false, false, false, 'C:\\projects\\b-les\\node_modules' ]
+73 info linkStuff angular-cookies@1.4.1
+74 verbose linkBins angular-cookies@1.4.1
+75 verbose linkMans angular-cookies@1.4.1
+76 verbose rebuildBundles angular-cookies@1.4.1
+77 info install angular-cookies@1.4.1
+78 info postinstall angular-cookies@1.4.1
+79 verbose rebuild bundle C:\projects\b-les\node_modules\angular-google-maps
+80 info build C:\projects\b-les\node_modules\angular-google-maps
+81 info preinstall angular-google-maps@2.1.0
+82 verbose linkStuff [ false, false, false, 'C:\\projects\\b-les\\node_modules' ]
+83 info linkStuff angular-google-maps@2.1.0
+84 verbose linkBins angular-google-maps@2.1.0
+85 verbose linkMans angular-google-maps@2.1.0
+86 verbose rebuildBundles angular-google-maps@2.1.0
+87 info install angular-google-maps@2.1.0
+88 info postinstall angular-google-maps@2.1.0
+89 verbose rebuild bundle C:\projects\b-les\node_modules\angular-resource
+90 info build C:\projects\b-les\node_modules\angular-resource
+91 info preinstall angular-resource@1.4.1
+92 verbose linkStuff [ false, false, false, 'C:\\projects\\b-les\\node_modules' ]
+93 info linkStuff angular-resource@1.4.1
+94 verbose linkBins angular-resource@1.4.1
+95 verbose linkMans angular-resource@1.4.1
+96 verbose rebuildBundles angular-resource@1.4.1
+97 info install angular-resource@1.4.1
+98 info postinstall angular-resource@1.4.1
+99 verbose rebuild bundle C:\projects\b-les\node_modules\angular-validation-match
+100 info build C:\projects\b-les\node_modules\angular-validation-match
+101 info preinstall angular-validation-match@1.5.1
+102 verbose linkStuff [ false, false, false, 'C:\\projects\\b-les\\node_modules' ]
+103 info linkStuff angular-validation-match@1.5.1
+104 verbose linkBins angular-validation-match@1.5.1
+105 verbose linkMans angular-validation-match@1.5.1
+106 verbose rebuildBundles angular-validation-match@1.5.1
+107 info install angular-validation-match@1.5.1
+108 info postinstall angular-validation-match@1.5.1
+109 verbose rebuild bundle C:\projects\b-les\node_modules\classie
+110 info build C:\projects\b-les\node_modules\classie
+111 info preinstall classie@0.1.0
+112 verbose linkStuff [ false, false, false, 'C:\\projects\\b-les\\node_modules' ]
+113 info linkStuff classie@0.1.0
+114 verbose linkBins classie@0.1.0
+115 verbose linkMans classie@0.1.0
+116 verbose rebuildBundles classie@0.1.0
+117 info install classie@0.1.0
+118 info postinstall classie@0.1.0
+119 verbose rebuild bundle C:\projects\b-les\node_modules\core-util-is
+120 info build C:\projects\b-les\node_modules\core-util-is
+121 info preinstall core-util-is@1.0.1
+122 verbose linkStuff [ false, false, false, 'C:\\projects\\b-les\\node_modules' ]
+123 info linkStuff core-util-is@1.0.1
+124 verbose linkBins core-util-is@1.0.1
+125 verbose linkMans core-util-is@1.0.1
+126 verbose rebuildBundles core-util-is@1.0.1
+127 info install core-util-is@1.0.1
+128 info postinstall core-util-is@1.0.1
+129 verbose rebuild bundle C:\projects\b-les\node_modules\estraverse
+130 info build C:\projects\b-les\node_modules\estraverse
+131 info preinstall estraverse@4.1.0
+132 verbose linkStuff [ false, false, false, 'C:\\projects\\b-les\\node_modules' ]
+133 info linkStuff estraverse@4.1.0
+134 verbose linkBins estraverse@4.1.0
+135 verbose linkMans estraverse@4.1.0
+136 verbose rebuildBundles estraverse@4.1.0
+137 info install estraverse@4.1.0
+138 info postinstall estraverse@4.1.0
+139 verbose rebuild bundle C:\projects\b-les\node_modules\gsap
+140 info build C:\projects\b-les\node_modules\gsap
+141 info preinstall gsap@1.16.1
+142 verbose linkStuff [ false, false, false, 'C:\\projects\\b-les\\node_modules' ]
+143 info linkStuff gsap@1.16.1
+144 verbose linkBins gsap@1.16.1
+145 verbose linkMans gsap@1.16.1
+146 verbose rebuildBundles gsap@1.16.1
+147 info install gsap@1.16.1
+148 info postinstall gsap@1.16.1
+149 verbose rebuild bundle C:\projects\b-les\node_modules\gulp-minify-css
+150 info build C:\projects\b-les\node_modules\gulp-minify-css
+151 info preinstall gulp-minify-css@1.2.0
+152 verbose linkStuff [ false, false, false, 'C:\\projects\\b-les\\node_modules' ]
+153 info linkStuff gulp-minify-css@1.2.0
+154 verbose linkBins gulp-minify-css@1.2.0
+155 verbose linkMans gulp-minify-css@1.2.0
+156 verbose rebuildBundles gulp-minify-css@1.2.0
+157 verbose rebuildBundles [ '.bin',
+157 verbose rebuildBundles   'clean-css',
+157 verbose rebuildBundles   'gulp-util',
+157 verbose rebuildBundles   'object-assign',
+157 verbose rebuildBundles   'readable-stream',
+157 verbose rebuildBundles   'vinyl-bufferstream',
+157 verbose rebuildBundles   'vinyl-sourcemaps-apply' ]
+158 info install gulp-minify-css@1.2.0
+159 info postinstall gulp-minify-css@1.2.0
+160 verbose rebuild bundle C:\projects\b-les\node_modules\gulp-purifycss
+161 info build C:\projects\b-les\node_modules\gulp-purifycss
+162 info preinstall gulp-purifycss@0.2.0
+163 verbose linkStuff [ false, false, false, 'C:\\projects\\b-les\\node_modules' ]
+164 info linkStuff gulp-purifycss@0.2.0
+165 verbose linkBins gulp-purifycss@0.2.0
+166 verbose linkMans gulp-purifycss@0.2.0
+167 verbose rebuildBundles gulp-purifycss@0.2.0
+168 verbose rebuildBundles [ '.bin', 'glob', 'gulp-util', 'purify-css', 'through2' ]
+169 info install gulp-purifycss@0.2.0
+170 info postinstall gulp-purifycss@0.2.0
+171 verbose rebuild bundle C:\projects\b-les\node_modules\inherits
+172 info build C:\projects\b-les\node_modules\inherits
+173 info preinstall inherits@2.0.1
+174 verbose linkStuff [ false, false, false, 'C:\\projects\\b-les\\node_modules' ]
+175 info linkStuff inherits@2.0.1
+176 verbose linkBins inherits@2.0.1
+177 verbose linkMans inherits@2.0.1
+178 verbose rebuildBundles inherits@2.0.1
+179 info install inherits@2.0.1
+180 info postinstall inherits@2.0.1
+181 verbose rebuild bundle C:\projects\b-les\node_modules\is-property
+182 info build C:\projects\b-les\node_modules\is-property
+183 info preinstall is-property@1.0.2
+184 verbose linkStuff [ false, false, false, 'C:\\projects\\b-les\\node_modules' ]
+185 info linkStuff is-property@1.0.2
+186 verbose linkBins is-property@1.0.2
+187 verbose linkMans is-property@1.0.2
+188 verbose rebuildBundles is-property@1.0.2
+189 info install is-property@1.0.2
+190 info postinstall is-property@1.0.2
+191 verbose rebuild bundle C:\projects\b-les\node_modules\isarray
+192 info build C:\projects\b-les\node_modules\isarray
+193 info preinstall isarray@0.0.1
+194 verbose linkStuff [ false, false, false, 'C:\\projects\\b-les\\node_modules' ]
+195 info linkStuff isarray@0.0.1
+196 verbose linkBins isarray@0.0.1
+197 verbose linkMans isarray@0.0.1
+198 verbose rebuildBundles isarray@0.0.1
+199 info install isarray@0.0.1
+200 info postinstall isarray@0.0.1
+201 verbose rebuild bundle C:\projects\b-les\node_modules\jquery
+202 info build C:\projects\b-les\node_modules\jquery
+203 info preinstall jquery@2.1.4
+204 verbose linkStuff [ false, false, false, 'C:\\projects\\b-les\\node_modules' ]
+205 info linkStuff jquery@2.1.4
+206 verbose linkBins jquery@2.1.4
+207 verbose linkMans jquery@2.1.4
+208 verbose rebuildBundles jquery@2.1.4
+209 info install jquery@2.1.4
+210 info postinstall jquery@2.1.4
+211 verbose rebuild bundle C:\projects\b-les\node_modules\jshint-loader
+212 info build C:\projects\b-les\node_modules\jshint-loader
+213 info preinstall jshint-loader@0.8.3
+214 verbose linkStuff [ false, false, false, 'C:\\projects\\b-les\\node_modules' ]
+215 info linkStuff jshint-loader@0.8.3
+216 verbose linkBins jshint-loader@0.8.3
+217 verbose linkMans jshint-loader@0.8.3
+218 verbose rebuildBundles jshint-loader@0.8.3
+219 verbose rebuildBundles [ '.bin', 'loader-utils', 'rcloader', 'strip-json-comments' ]
+220 info install jshint-loader@0.8.3
+221 info postinstall jshint-loader@0.8.3
+222 verbose rebuild bundle C:\projects\b-les\node_modules\jsx-loader
+223 info build C:\projects\b-les\node_modules\jsx-loader
+224 info preinstall jsx-loader@0.13.2
+225 verbose linkStuff [ false, false, false, 'C:\\projects\\b-les\\node_modules' ]
+226 info linkStuff jsx-loader@0.13.2
+227 verbose linkBins jsx-loader@0.13.2
+228 verbose linkMans jsx-loader@0.13.2
+229 verbose rebuildBundles jsx-loader@0.13.2
+230 verbose rebuildBundles [ '.bin', 'jstransform', 'loader-utils' ]
+231 info install jsx-loader@0.13.2
+232 info postinstall jsx-loader@0.13.2
+233 verbose rebuild bundle C:\projects\b-les\node_modules\legacy-loader
+234 info build C:\projects\b-les\node_modules\legacy-loader
+235 info preinstall legacy-loader@0.0.2
+236 verbose linkStuff [ false, false, false, 'C:\\projects\\b-les\\node_modules' ]
+237 info linkStuff legacy-loader@0.0.2
+238 verbose linkBins legacy-loader@0.0.2
+239 verbose linkMans legacy-loader@0.0.2
+240 verbose rebuildBundles legacy-loader@0.0.2
+241 verbose rebuildBundles [ 'loader-utils', 'source-map' ]
+242 info install legacy-loader@0.0.2
+243 info postinstall legacy-loader@0.0.2
+244 verbose rebuild bundle C:\projects\b-les\node_modules\lodash
+245 info build C:\projects\b-les\node_modules\lodash
+246 info preinstall lodash@3.8.0
+247 verbose linkStuff [ false, false, false, 'C:\\projects\\b-les\\node_modules' ]
+248 info linkStuff lodash@3.8.0
+249 verbose linkBins lodash@3.8.0
+250 verbose linkMans lodash@3.8.0
+251 verbose rebuildBundles lodash@3.8.0
+252 info install lodash@3.8.0
+253 info postinstall lodash@3.8.0
+254 verbose rebuild bundle C:\projects\b-les\node_modules\modernizr
+255 info build C:\projects\b-les\node_modules\modernizr
+256 info preinstall modernizr@3.0.0-alpha.4
+257 verbose linkStuff [ false, false, false, 'C:\\projects\\b-les\\node_modules' ]
+258 info linkStuff modernizr@3.0.0-alpha.4
+259 verbose linkBins modernizr@3.0.0-alpha.4
+260 verbose link bins [ { modernizr: './bin/modernizr' },
+260 verbose link bins   'C:\\projects\\b-les\\node_modules\\.bin',
+260 verbose link bins   false ]
+261 verbose linkMans modernizr@3.0.0-alpha.4
+262 verbose rebuildBundles modernizr@3.0.0-alpha.4
+263 verbose rebuildBundles [ '.bin',
+263 verbose rebuildBundles   'file',
+263 verbose rebuildBundles   'find-parent-dir',
+263 verbose rebuildBundles   'lodash',
+263 verbose rebuildBundles   'marked',
+263 verbose rebuildBundles   'mkdirp',
+263 verbose rebuildBundles   'requirejs',
+263 verbose rebuildBundles   'yargs' ]
+264 info install modernizr@3.0.0-alpha.4
+265 info postinstall modernizr@3.0.0-alpha.4
+266 verbose rebuild bundle C:\projects\b-les\node_modules\ngmin
+267 info build C:\projects\b-les\node_modules\ngmin
+268 info preinstall ngmin@0.5.0
+269 verbose linkStuff [ false, false, false, 'C:\\projects\\b-les\\node_modules' ]
+270 info linkStuff ngmin@0.5.0
+271 verbose linkBins ngmin@0.5.0
+272 verbose link bins [ { ngmin: './bin/ngmin' },
+272 verbose link bins   'C:\\projects\\b-les\\node_modules\\.bin',
+272 verbose link bins   false ]
+273 verbose linkMans ngmin@0.5.0
+274 verbose rebuildBundles ngmin@0.5.0
+275 verbose rebuildBundles [ '.bin',
+275 verbose rebuildBundles   'astral',
+275 verbose rebuildBundles   'astral-angular-annotate',
+275 verbose rebuildBundles   'clone',
+275 verbose rebuildBundles   'commander',
+275 verbose rebuildBundles   'escodegen',
+275 verbose rebuildBundles   'esprima',
+275 verbose rebuildBundles   'ngmin-dynamic' ]
+276 info install ngmin@0.5.0
+277 info postinstall ngmin@0.5.0
+278 verbose rebuild bundle C:\projects\b-les\node_modules\ngmin-webpack-plugin
+279 info build C:\projects\b-les\node_modules\ngmin-webpack-plugin
+280 info preinstall ngmin-webpack-plugin@0.1.3
+281 verbose linkStuff [ false, false, false, 'C:\\projects\\b-les\\node_modules' ]
+282 info linkStuff ngmin-webpack-plugin@0.1.3
+283 verbose linkBins ngmin-webpack-plugin@0.1.3
+284 verbose linkMans ngmin-webpack-plugin@0.1.3
+285 verbose rebuildBundles ngmin-webpack-plugin@0.1.3
+286 verbose rebuildBundles [ 'webpack-core' ]
+287 info install ngmin-webpack-plugin@0.1.3
+288 info postinstall ngmin-webpack-plugin@0.1.3
+289 verbose rebuild bundle C:\projects\b-les\node_modules\nib
+290 info build C:\projects\b-les\node_modules\nib
+291 info preinstall nib@1.1.0
+292 verbose linkStuff [ false, false, false, 'C:\\projects\\b-les\\node_modules' ]
+293 info linkStuff nib@1.1.0
+294 verbose linkBins nib@1.1.0
+295 verbose linkMans nib@1.1.0
+296 verbose rebuildBundles nib@1.1.0
+297 info install nib@1.1.0
+298 info postinstall nib@1.1.0
+299 verbose rebuild bundle C:\projects\b-les\node_modules\perfect-scrollbar
+300 info build C:\projects\b-les\node_modules\perfect-scrollbar
+301 info preinstall perfect-scrollbar@0.6.2
+302 verbose linkStuff [ false, false, false, 'C:\\projects\\b-les\\node_modules' ]
+303 info linkStuff perfect-scrollbar@0.6.2
+304 verbose linkBins perfect-scrollbar@0.6.2
+305 verbose linkMans perfect-scrollbar@0.6.2
+306 verbose rebuildBundles perfect-scrollbar@0.6.2
+307 info install perfect-scrollbar@0.6.2
+308 info postinstall perfect-scrollbar@0.6.2
+309 verbose rebuild bundle C:\projects\b-les\node_modules\rupture
+310 info build C:\projects\b-les\node_modules\rupture
+311 info preinstall rupture@0.6.1
+312 verbose linkStuff [ false, false, false, 'C:\\projects\\b-les\\node_modules' ]
+313 info linkStuff rupture@0.6.1
+314 verbose linkBins rupture@0.6.1
+315 verbose linkMans rupture@0.6.1
+316 verbose rebuildBundles rupture@0.6.1
+317 info install rupture@0.6.1
+318 info postinstall rupture@0.6.1
+319 verbose rebuild bundle C:\projects\b-les\node_modules\scandir
+320 info install webpack-angular@1.0.0
+321 info postinstall webpack-angular@1.0.0
+322 info prepublish webpack-angular@1.0.0
+323 warn unmet dependency C:\projects\b-les\node_modules\gulp.spritesmith\node_modules\spritesmith\node_modules\pixelsmith\node_modules\ndarray-fill\node_modules\cwise\node_modules\static-module\node_modules\static-eval\node_modules\escodegen requires estraverse@'~1.3.0' but will load
+323 warn unmet dependency C:\projects\b-les\node_modules\estraverse,
+323 warn unmet dependency which is version 4.1.0
+324 warn unmet dependency C:\projects\b-les\node_modules\imagemin-pngquant\node_modules\pngquant-bin\node_modules\bin-build\node_modules\decompress\node_modules\vinyl-fs\node_modules\glob-watcher\node_modules\gaze\node_modules\globule\node_modules\glob requires graceful-fs@'~1.2.0' but will load
+324 warn unmet dependency C:\projects\b-les\node_modules\imagemin-pngquant\node_modules\pngquant-bin\node_modules\bin-build\node_modules\decompress\node_modules\vinyl-fs\node_modules\graceful-fs,
+324 warn unmet dependency which is version 3.0.6
+325 warn unmet dependency C:\projects\b-les\node_modules\imagemin-pngquant\node_modules\pngquant-bin\node_modules\bin-build\node_modules\decompress\node_modules\vinyl-fs\node_modules\glob-watcher\node_modules\gaze\node_modules\globule\node_modules\glob requires inherits@'1' but will load
+325 warn unmet dependency C:\projects\b-les\node_modules\inherits,
+325 warn unmet dependency which is version 2.0.1
+326 warn unmet dependency C:\projects\b-les\node_modules\imagemin-pngquant\node_modules\pngquant-bin\node_modules\bin-build\node_modules\download\node_modules\vinyl-fs\node_modules\glob-watcher\node_modules\gaze\node_modules\globule\node_modules\glob requires graceful-fs@'~1.2.0' but will load
+326 warn unmet dependency C:\projects\b-les\node_modules\imagemin-pngquant\node_modules\pngquant-bin\node_modules\bin-build\node_modules\download\node_modules\vinyl-fs\node_modules\graceful-fs,
+326 warn unmet dependency which is version 3.0.6
+327 warn unmet dependency C:\projects\b-les\node_modules\imagemin-pngquant\node_modules\pngquant-bin\node_modules\bin-build\node_modules\download\node_modules\vinyl-fs\node_modules\glob-watcher\node_modules\gaze\node_modules\globule\node_modules\glob requires inherits@'1' but will load
+327 warn unmet dependency C:\projects\b-les\node_modules\inherits,
+327 warn unmet dependency which is version 2.0.1
+328 warn unmet dependency C:\projects\b-les\node_modules\imagemin-pngquant\node_modules\pngquant-bin\node_modules\bin-wrapper\node_modules\download\node_modules\vinyl-fs\node_modules\glob-watcher\node_modules\gaze\node_modules\globule\node_modules\glob requires graceful-fs@'~1.2.0' but will load
+328 warn unmet dependency C:\projects\b-les\node_modules\imagemin-pngquant\node_modules\pngquant-bin\node_modules\bin-wrapper\node_modules\download\node_modules\vinyl-fs\node_modules\graceful-fs,
+328 warn unmet dependency which is version 3.0.6
+329 warn unmet dependency C:\projects\b-les\node_modules\imagemin-pngquant\node_modules\pngquant-bin\node_modules\bin-wrapper\node_modules\download\node_modules\vinyl-fs\node_modules\glob-watcher\node_modules\gaze\node_modules\globule\node_modules\glob requires inherits@'1' but will load
+329 warn unmet dependency C:\projects\b-les\node_modules\inherits,
+329 warn unmet dependency which is version 2.0.1
+330 verbose stack Error: The package angular does not satisfy its siblings' peerDependencies requirements!
+330 verbose stack     at c:\Program Files\nodejs\node_modules\npm\lib\install.js:125:32
+330 verbose stack     at c:\Program Files\nodejs\node_modules\npm\lib\install.js:264:7
+330 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:138:5
+330 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
+330 verbose stack     at cb (c:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+330 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
+330 verbose stack     at cb (c:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+330 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
+330 verbose stack     at cb (c:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+330 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
+331 verbose cwd C:\projects\b-les
+332 error Windows_NT 6.1.7601
+333 error argv "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "i"
+334 error node v0.12.2
+335 error npm  v2.7.4
+336 error code EPEERINVALID
+337 error peerinvalid The package angular does not satisfy its siblings' peerDependencies requirements!
+337 error peerinvalid Peer angular-material@0.8.3 wants angular@1.3.x
+337 error peerinvalid Peer angular-formly@4.2.5 wants angular@^1.x
+338 verbose exit [ 1, true ]

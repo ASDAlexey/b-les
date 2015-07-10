@@ -1,0 +1,195 @@
+include ./mixin-lorem-ipsum.jade
+mixin also-like()
+    section.also-like
+        h1 Вам может также понравиться
+        ul
+            li
+                a(href="./product-details.html")
+                    .wrapper-img
+                        img(src="./images/also-like/1.jpg")
+                    .wrapper-text
+                        h2 Туфли “CARLO PAZOLINI”
+                        p 3 999 руб.
+            li
+                a(href="./product-details.html")
+                    .wrapper-img
+                        img(src="./images/also-like/2.jpg")
+                    .wrapper-text
+                        h2 Туфли “CARLO PAZOLINI”
+                        p 3 999 руб.
+
+            li
+                a(href="./product-details.html").wrapper-img
+                    .wrapper-img
+                        img(src="./images/also-like/3.jpg")
+                    .wrapper-text
+                        h2 Туфли “CARLO PAZOLINI”
+                        p 3 999 руб.
+            li
+                a(href="./product-details.html")
+                    .wrapper-img
+                        img(src="./images/also-like/4.jpg")
+                    .wrapper-text
+                        h2 Туфли “CARLO PAZOLINI”
+                        p 3 999 руб.
+            li
+                a(href="./product-details.html")
+                    .wrapper-img
+                        img(src="./images/also-like/5.jpg")
+                    .wrapper-text
+                        h2 Туфли “CARLO PAZOLINI” Туфли “CARLO PAZOLINI"
+                        p 3 999 руб.
+            li
+                a(href="./product-details.html")
+                    .wrapper-img
+                        img(src="./images/also-like/6.jpg")
+                    .wrapper-text
+                        h2 Туфли “CARLO PAZOLINI”
+                        p 3 999 руб.
+mixin header()
+    header.header
+        .inner-header
+            .recall-block
+                a(href="") Заказать обратный звонок
+                .phone +7 495 150 00 32
+            ul.header-list
+                //.active - ставить у ссылки на странице которой мы сейчас находимся
+                li
+                    a.level-link(href="./")
+                        //Если это главная страница, то логотип должен быть большим
+                        //img(src="./images/logo.png" width="196" height="251")
+                        //Если это любая страница кроме главной, то логотип должен быть маленким
+                        img(src="./images/logo-page.png" width="117" height="136")
+                li
+                    a.active.level-link(href="./fabrica.html") Фабрика
+                li
+                    a.level-link(href="./catalog.html") Каталог
+                li
+                    a.level-link(href="./where_to_buy.html") Где купить
+                    .sub-menu.dn
+                        -var locations=['Астрахань','Белгород','Брянск','Воронеж','Калуга','Краснодар','Липецк','Москва','Пермь','Пятигорск','Ростов-на-Дону','Санкт-Петербург','Ставрополь'];
+                        ul
+                            each location,index in locations
+                                li
+                                    a(href="./where_to_buy.html?location=#{index+1}") #{location}
+                li
+                    a.level-link(href="./where_to_buy.html?location=1") Фирменная розничная сеть
+                li
+                    a.level-link(href="./list-news.html") Новости
+mixin header-content()
+    header.header-content
+        .search
+            form.form-validate.search(name="formValidate" is-valide-border="{{formValidate.$invalid}}" novalidate ng-controller="SearchCtrl" ng-init='action="index.php?limitstart=0&option=com_virtuemart&view=category"')
+                button.send(ng-click='send(dataForm,formValidate,action)' ng-class="{'active':isOpenSearch==true}")
+                    span.fa.fa-search
+                .wrapper-search-block(ng-class="{'active':isOpenSearch==true}")
+                    input(type="text" name="search" placeholder="Поиск" ng-model='dataForm.search' autocomplete="off" ng-focus="isOpenSearch=true" ng-blur="blurSearch(dataForm.search)")
+        .cart.style(flip3d)
+            a(href="")
+                span Корзина (
+                span 2
+                | )
+            .mini-cart-content(ng-controller="MiniCart")
+                .wrapper-scroller.mini-cart-slider(ng-init="products=#{JSON.stringify(cart)}")
+                    ul.switcher(ng-show="products.length>2")
+                        li
+                            a(href="" class="prev")
+                        li
+                            a(href="" class="next")
+                    scroller.scroller.scroller-y.is-draggable(ng-class="{'small-height':products.length<2}" item-width="87" count-slides="3" direction="scrollTop")
+                        ul(ng-if="products.length")
+                            li(ng-repeat="product in products")
+                                a(ng-href="{{product.link}}").wrapper-img
+                                    img(ng-src="{{product.file_url}}")
+                                .wrapper-title
+                                    h1.title
+                                        a(ng-href="{{product.link}}" ng-bind="product.product_name")
+                                .wrapper-size
+                                    p.size
+                                        span(ng-bind="product.size")
+                                .wrapper-price
+                                    p.price
+                                        span
+                                            span(ng-bind="product.product_price|splitSpace") 3 999
+                                            span руб.
+                                .wrapper-delete
+                                    a.delete(href="" ng-click="delete(product)")
+                        ul.empty(ng-if="!products.length")
+                            li
+                                span В корзине нет товаров
+                footer.footer-small-cart
+                    .close-small-cart
+                        .fa.fa-close
+                    div(ng-if="products.length")
+                        span Итого:
+                        span(ng-bind="resultSum(products)|splitSpace")
+                        span  руб.
+                    a.issue(ng-if="products.length" href="./cart.html") Оформить
+        .authentificition.style
+            a(href="" ng-click="openPopup('enter',{})") Вход
+            a(hidden href="./private-office.html") Иван (
+                span выйти
+                | )
+        -var nav=["Для женщин","Для мужчин","Для детей","Акции","Распродажа","О компании"];
+        ul
+            li
+                a(href="./")
+                    img(src="./images/logo.png" width="42" height="42")
+            each listNav,key in nav
+                li
+                    a(href="./category.html") #{listNav}
+                    span
+                    div.sub-menu
+                        div
+                            ul
+                                li
+                                    a(href="./product-details.html") Балетки
+                                li
+                                    a(href="./product-details.html") Босоножки
+                                li
+                                    a(href="./product-details.html") Cандалии
+                                li
+                                    a(href="./product-details.html") Ботинки
+                                li
+                                    a(href="./product-details.html") Кеды
+                        div
+                            ul
+                                li
+                                    a(href="./product-details.html") Кроссовки
+                                li
+                                    a(href="./product-details.html") Мокасины
+                                li
+                                    a(href="./product-details.html") Пантолеты
+                                li
+                                    a(href="./product-details.html") Шлепанцы
+                                li
+                                    a(href="./product-details.html") Полусапожки
+                        div
+                            ul
+                                li
+                                    a(href="./product-details.html") Резиновые сапоги
+                                li
+                                    a(href="./product-details.html") Сабо
+                                li
+                                    a(href="./product-details.html") Сапоги
+                                li
+                                    a(href="./product-details.html") Слипоны
+                                li
+                                    a(href="./product-details.html") Тапочки
+                        div
+                            ul
+                                li
+                                    a(href="./product-details.html") Туфли
+mixin breadcrumbs(arr)
+    div.wrapper-breadcrumbs
+        ul.breadcrumbs.animated.bounceInRight
+            -var itteration=0;
+            -var count=arr.length;
+            each arrItem in arr
+                if (itteration==count-1)
+                    li
+                        span #{arrItem}
+                else
+                    li
+                        a(href="./") #{arrItem}
+                - itteration++
